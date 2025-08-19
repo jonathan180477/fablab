@@ -9,17 +9,30 @@ import jsPDF from 'jspdf';
 
 // Lista de instituciones educativas predefinidas
 const institucionesEducativas = [
-  "Unidad Educativa Particular Bilingüe Jefferson",
-  "Unidad Educativa Particular Bilingüe Ecomundo",
-  "Unidad Educativa Particular Bilingüe Nuevo Mundo",
-  "Unidad Educativa Particular Bilingüe Delta",
-  "Unidad Educativa Particular Bilingüe Tomás Moro",
-  "Unidad Educativa Particular Bilingüe Academia Almirante Nelson",
-  "Unidad Educativa Particular Bilingüe American School",
-  "Unidad Educativa Particular Bilingüe Torremar",
-  "Unidad Educativa Fiscal",
+  "Escuela Sagrado Corazón de Jesús",
+  "Colegio Sagrado Corazón de Jesús",
+  "Colegio Hermano Miguel La Salle",
+  "Unidad Educativa Fiscomisional Hermano Miguel La Salle",
+  "Unidad Educativa Fiscomisional María Auxiliadora",
+  "Escuela de Educación Básica Mundo Feliz",
+  "Escuela San Antonio de Padua",
+  "Escuela de Educación Básica Cristo Rey",
+  "Unidad Educativa Cristo Rey",
+  "Escuela de Educación Básica Americano",
+  "Unidad Educativa Americano",
+  "Escuela Gotitas de Miel",
+  "Escuela Pequeños Emprendedores",
+  "Escuela Shiny Kids",
+  "Unidad Educativa Consejo Provincial del Carchi",
+  "Unidad de Educación Especializada del Carchi",
+  "Unidad Educativa Alejandro R. Mera",
+  "Unidad Educativa Isaac Acosta Calderón",
+  "Unidad Educativa Vicente Fierro",
+  "Unidad Educativa Fiscomisional Monseñor Leonidas Proaño PCEI",
+  "Unidad Educativa William Shakespeare",
   "Otra institución"
 ];
+
 
 // Interfaces
 interface QuestionItem {

@@ -308,7 +308,7 @@ const Test: React.FC = () => {
   try {
     setLoading(true);
     const queryParams = new URLSearchParams();
-    
+
     if (filters.search) queryParams.append('search', filters.search);
     if (filters.testType) queryParams.append('testType', filters.testType);
     if (filters.gender) queryParams.append('gender', filters.gender);
@@ -320,14 +320,19 @@ const Test: React.FC = () => {
     const response = await fetch(`https://fablab.upec.edu.ec/procalculo-api/reportes?${queryParams}`);
     
     if (!response.ok) {
-      throw new Error('Error al obtener los reportes');
+      throw new Error(`Error HTTP: ${response.status} ${response.statusText}`);
     }
 
     const data = await response.json();
-    setReportes(data.data);
+    if (!data.success) {
+      throw new Error(data.error || 'Error en la respuesta de la API');
+    }
+
+    // Asegúrate de que los datos sean un array
+    setReportes(Array.isArray(data.data) ? data.data : []);
     setError(null);
   } catch (err) {
-    const error = err as Error;
+    const error = err instanceof Error ? err : new Error('Error desconocido');
     setError(error.message || 'Error al cargar los reportes');
     console.error('Error fetching reportes:', error);
   } finally {
