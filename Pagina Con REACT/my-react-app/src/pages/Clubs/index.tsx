@@ -99,7 +99,7 @@ const Clubs = () => {
           <div className={styles.proyectosGrid}>
             <div className={styles.proyectoCard}>
               <img src="/img/proyecto1.jpg" alt="Campaña Redes Sociales" />
-              <h3>Campaña Digital para Startup</h3>
+              <h3>Campaña Digital para Startup.</h3>
               <p>Aumento del 150% en engagement</p>
             </div>
             <div className={styles.proyectoCard}>
