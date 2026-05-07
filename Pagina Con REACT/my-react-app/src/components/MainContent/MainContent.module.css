@@ -3,6 +3,7 @@
   flex: 1;
   width: 99vw;
 }
+
 .mainSection {
   width: 100%;
   padding: 20px;
@@ -14,8 +15,10 @@
   margin: 0 auto;
   padding: 0 5rem;
   position: relative;
-  z-index: 3; /* Ensures content is above the animated background */
-  max-width: 1400px; /* Limita el ancho máximo */
+  z-index: 3;
+  /* Ensures content is above the animated background */
+  max-width: 1400px;
+  /* Limita el ancho máximo */
 
 }
 
@@ -25,14 +28,18 @@
   padding: clamp(2rem, 8vw, 15rem) 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  position: relative; /* Added for background positioning */
-  overflow: hidden; /* Ensures animations don't overflow */
+  position: relative;
+  /* Added for background positioning */
+  overflow: hidden;
+  /* Ensures animations don't overflow */
 }
+
 .carruselContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Espaciado entre logo y carrusel */
+  gap: 2rem;
+  /* Espaciado entre logo y carrusel */
   width: 100%;
   max-width: 1200px;
 }
@@ -44,7 +51,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Between background and content */
+  z-index: 1;
+  /* Between background and content */
 }
 
 .carruselContainer {
@@ -53,12 +61,16 @@
   align-items: center;
   min-height: 100px;
   position: center;
-  z-index: 2; /* Above the animated background */
+  z-index: 2;
+  /* Above the animated background */
 }
+
 .logoContainer {
   text-align: center;
-  margin-bottom: 2rem; /* Agrega separación */
+  margin-bottom: 4rem;
+  /* Agrega separación */
 }
+
 .logoSection {
   flex: 0 1 40%;
   text-align: center;
@@ -73,7 +85,7 @@
 
 .imageSlider {
   width: 80%;
-  max-width: 800px; 
+  max-width: 800px;
   flex: 1;
   height: 500px;
   position: relative;
@@ -88,7 +100,7 @@
   object-fit: cover;
   opacity: 0;
   transition: opacity 2s ease;
-  z-index:0 ;
+  z-index: 0;
 }
 
 .slide.active {
@@ -112,7 +124,8 @@
   padding: 2rem 0;
 }
 
-.misionCard, .visionCard {
+.misionCard,
+.visionCard {
   padding: 2rem;
   background: rgba(0, 102, 51, 0.2);
   border-radius: 15px;
@@ -124,13 +137,15 @@
   align-items: center;
 }
 
-.misionCard h2, .visionCard h2 {
+.misionCard h2,
+.visionCard h2 {
   color: var(--color-primary-green);
   margin: 1rem 0;
   font-size: 2rem;
 }
 
-.misionCard p, .visionCard p {
+.misionCard p,
+.visionCard p {
   color: var(--color-text-dark);
   font-size: 1rem;
   line-height: 1.6;
@@ -143,9 +158,10 @@
   margin-bottom: -1rem;
 }
 
-.misionCard:hover, .visionCard:hover {
+.misionCard:hover,
+.visionCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Rest of your CSS remains unchanged */
@@ -214,7 +230,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Added for icon centering */
+  align-items: center;
+  /* Added for icon centering */
   transition: var(--transition-smooth);
   text-align: center;
 }
@@ -306,7 +323,8 @@
 .directorCard img {
   width: 100%;
   height: auto;
-  max-height: 250px; /* Evita imágenes demasiado grandes */
+  max-height: 250px;
+  /* Evita imágenes demasiado grandes */
   object-fit: cover;
 }
 
@@ -314,9 +332,11 @@
   padding: 1.5rem;
   text-align: center;
 }
+
 .inactive {
   opacity: 0.2;
 }
+
 /* Estilo específico para la tarjeta única del director */
 .singleDirector {
   width: 100%;
@@ -325,8 +345,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid var(--color-primary-green); /* Línea verde alrededor de la tarjeta */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 3px solid var(--color-primary-green);
+  /* Línea verde alrededor de la tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
   border-radius: 15px;
   overflow: hidden;
   transition: var(--transition-smooth);
@@ -334,9 +356,11 @@
 
 .singleDirector img {
   width: 100%;
-  height: 650px; /* Altura aumentada para mostrar la imagen completa */
+  height: 650px;
+  /* Altura aumentada para mostrar la imagen completa */
   object-fit: cover;
-  object-position: top; /* Asegura que la cabeza sea visible */
+  object-position: top;
+  /* Asegura que la cabeza sea visible */
 }
 
 .singleDirector .directorInfo {
@@ -350,11 +374,13 @@
   .singleDirector {
     max-width: 90%;
   }
-  
+
   .singleDirector img {
-    height: 400px; /* Incluso más alto en dispositivos móviles si es necesario */
+    height: 400px;
+    /* Incluso más alto en dispositivos móviles si es necesario */
   }
 }
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .carruselContainer {
@@ -363,9 +389,11 @@
     align-items: center;
     text-align: center;
   }
+
   .logoSection {
     margin-bottom: 1rem;
   }
+
   .imageSlider {
     width: 100%;
     max-width: 90vw;
@@ -392,19 +420,24 @@
   }
 
   .directorCard img {
-    width: 90%; /* Ajusta el tamaño en pantallas pequeñas */
-    max-width: 350px; /* Evita que se estire demasiado */
+    width: 90%;
+    /* Ajusta el tamaño en pantallas pequeñas */
+    max-width: 350px;
+    /* Evita que se estire demasiado */
   }
+
   .directoresGrid {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
+
   .directorCard img {
     width: 100%;
     height: auto;
-    max-height: 250px; /* Evita imágenes demasiado grandes */
+    max-height: 250px;
+    /* Evita imágenes demasiado grandes */
     object-fit: cover;
   }
 
@@ -412,13 +445,16 @@
     padding: 1rem;
     text-align: center;
   }
+
   .oportunidadesImage img {
     height: 300px;
   }
 
-  .misionCard, .visionCard {
+  .misionCard,
+  .visionCard {
     padding: 1.5rem;
   }
+
   .carruselContainer {
     align-items: center;
     text-align: center;
@@ -426,7 +462,7 @@
   }
 
   .logoSection {
-    padding:10%;
+    padding: 10%;
     position: center;
     aspect-ratio: 21/13;
   }
@@ -434,25 +470,31 @@
   .imageSlider {
     width: 300px;
     height: auto;
-    max-width: 90vw; /* Para evitar que sea demasiado grande */
+    max-width: 90vw;
+    /* Para evitar que sea demasiado grande */
     top: 50%;
     position: center;
-    display: flex; /* Asegura que siempre se muestre */
- padding: 15%;
- aspect-ratio: 21/13;
+    display: flex;
+    /* Asegura que siempre se muestre */
+    padding: 15%;
+    aspect-ratio: 21/13;
   }
 
   .slide {
     width: 100%;
     height: 100%;
-    
+
     max-height: 500px;
   }
+
   .logo {
-    max-width: 200px; /* Ajusta el tamaño del logo */
+    max-width: 200px;
+    /* Ajusta el tamaño del logo */
   }
 }
+
 @media (max-width: 480px) {
+
   .carruselSection,
   .misionVision,
   .laboratoriosSection,
@@ -474,7 +516,8 @@
     font-size: 2.5rem;
   }
 
-  .misionCard h2, .visionCard h2 {
+  .misionCard h2,
+  .visionCard h2 {
     font-size: 1.75rem;
   }
 }

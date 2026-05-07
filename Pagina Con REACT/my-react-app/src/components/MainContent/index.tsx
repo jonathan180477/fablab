@@ -1,7 +1,7 @@
 import { FaBullseye, FaEye } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import styles from './MainContent.module.css';
-import { FaRegGem} from 'react-icons/fa';
+import { FaRegGem } from 'react-icons/fa';
 import { GiSprint, GiHeatHaze, GiCircuitry, GiTeacher, GiRolledCloth } from 'react-icons/gi';
 import { FiTool, FiPrinter, FiPackage } from 'react-icons/fi';
 import { MdDesignServices } from "react-icons/md";
@@ -62,37 +62,37 @@ const MainContent = () => {
       {/* Carrusel */}
       <section className={styles.carruselSection}>
         <div className={styles.backgroundContainer}>
-          <NeuralNetworkBackground 
-            color="rgba(255, 255, 255, 0.4)" 
+          <NeuralNetworkBackground
+            color="rgba(255, 255, 255, 0.4)"
             nodeDensity={15}
           />
         </div>
         <div className={styles.contentWrapper}>
           <div className={styles.carruselContainer}>
-          {/* Logo */}
-    <div className={styles.logoSection}>
-      <img
-        src="/img/FABLOGO.png"
-        alt="Logo"
-        className={styles.logo}
-        loading="lazy"
-      />
-    </div>
+            {/* Logo */}
+            <div className={styles.logoSection}>
+              <img
+                src="/img/FABLOGO.png"
+                alt="Logo"
+                className={styles.logo}
+                loading="lazy"
+              />
+            </div>
 
-    {/* Carrusel */}
-    <div className={styles.imageSlider}>
-      {images.map((image, index) => (
-        <img
-          key={image}
-          src={image}
-          alt={`Imagen ${index + 1}`}
-          className={`${styles.slide} ${index === currentImageIndex ? styles.active : ''}`}
-          loading="lazy"
-        />
-      ))}
-    </div>
-  </div>
-  </div>  
+            {/* Carrusel */}
+            <div className={styles.imageSlider}>
+              {images.map((image, index) => (
+                <img
+                  key={image}
+                  src={image}
+                  alt={`Imagen ${index + 1}`}
+                  className={`${styles.slide} ${index === currentImageIndex ? styles.active : ''}`}
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Resto del componente sin cambios */}
@@ -101,19 +101,19 @@ const MainContent = () => {
           <div className={styles.misionVisionGrid}>
             <div className={styles.misionCard}>
               <FaBullseye className={styles.icon} />
-              <h2>Misión</h2>
-              <p>Fomentar el aprendizaje práctico, la investigación aplicada y el desarrollo de soluciones tecnológicas mediante 
-                el uso de herramientas de fabricación digital. El FabLab UPEC ofrece un espacio abierto e inclusivo donde estudiantes, 
-                docentes, emprendedores y ciudadanía colaboran para transformar ideas en prototipos funcionales, promoviendo el desarrollo sostenible, 
+              <h2>Misión 208372</h2>
+              <p>Fomentar el aprendizaje práctico, la investigación aplicada y el desarrollo de soluciones tecnológicas mediante
+                el uso de herramientas de fabricación digital. El FabLab UPEC ofrece un espacio abierto e inclusivo donde estudiantes,
+                docentes, emprendedores y ciudadanía colaboran para transformar ideas en prototipos funcionales, promoviendo el desarrollo sostenible,
                 la cultura maker y la innovación en la región.</p>
             </div>
             <div className={styles.visionCard}>
               <FaEye className={styles.icon} />
               <h2>Visión</h2>
-              <p>Ser un referente regional en innovación, educación y emprendimiento tecnológico, impulsando la fabricación digital, la creatividad y la 
-                transferencia de conocimiento, con impacto social y económico en la provincia del Carchi y la zona fronteriza, integrando a la academia, 
+              <p>Ser un referente regional en innovación, educación y emprendimiento tecnológico, impulsando la fabricación digital, la creatividad y la
+                transferencia de conocimiento, con impacto social y económico en la provincia del Carchi y la zona fronteriza, integrando a la academia,
                 la industria y la comunidad.</p>
-              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ const MainContent = () => {
         <div className={styles.contentWrapper}>
           <h2 className={styles.sectionTitle} style={{ color: "#006633" }}>
             Servicios y Equipos
-          </h2>   
+          </h2>
           <div className={styles.serviciosGrid}>
             {[
               { title: 'Corte y grabado láser', icon: <FaRegGem style={{ color: "#FFFFFF" }} /> },
@@ -189,25 +189,25 @@ const MainContent = () => {
       </section>
 
       {/* Directores */}
-      
+
       <section className={styles.directoresSection}>
-  <div className={styles.contentWrapper}>
-    <div className={styles.directoresGrid}>
-      <article className={`${styles.directorCard} ${styles.singleDirector}`}>
-        <img
-          src="/img/IngJeffry.jpg"
-          alt="Director del FabLab"
-          loading="lazy"
-        />
-        <div className={styles.directorInfo}>
-          <h2>Msc. Jeffry Naranjo</h2>
-          <h3>Director del FabLab</h3>
-          <p>Impulsando la innovación y la creatividad tecnológica.</p>
+        <div className={styles.contentWrapper}>
+          <div className={styles.directoresGrid}>
+            <article className={`${styles.directorCard} ${styles.singleDirector}`}>
+              <img
+                src="/img/IngJeffry.jpg"
+                alt="Director del FabLab"
+                loading="lazy"
+              />
+              <div className={styles.directorInfo}>
+                <h2>Msc. Jeffry Naranjo</h2>
+                <h3>Director del FabLab</h3>
+                <p>Impulsando la innovación y la creatividad tecnológica.</p>
+              </div>
+            </article>
+          </div>
         </div>
-      </article>
-    </div>
-  </div>
-</section>
+      </section>
     </main>
   );
 };
