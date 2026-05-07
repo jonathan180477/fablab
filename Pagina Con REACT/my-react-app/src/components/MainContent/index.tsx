@@ -101,7 +101,7 @@ const MainContent = () => {
           <div className={styles.misionVisionGrid}>
             <div className={styles.misionCard}>
               <FaBullseye className={styles.icon} />
-              <h2>Misión 208372</h2>
+              <h2>Misión</h2>
               <p>Fomentar el aprendizaje práctico, la investigación aplicada y el desarrollo de soluciones tecnológicas mediante
                 el uso de herramientas de fabricación digital. El FabLab UPEC ofrece un espacio abierto e inclusivo donde estudiantes,
                 docentes, emprendedores y ciudadanía colaboran para transformar ideas en prototipos funcionales, promoviendo el desarrollo sostenible,
